@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cris.gitdemo.splash.SplashActiivity">
+
+    <fragment
+        android:name="com.cris.gitdemo.splash.SplashPagerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/splash_page_fragment"
+        android:layout_above="@+id/button_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlue"
+        style="?attr/buttonBarStyle"
+        android:id="@+id/button_bar">
+
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_login"
+            style="?attr/buttonBarButtonStyle"
+            android:text="@string/login_github"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:background="@color/colorhalfTranslucent"/>
+
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_enter"
+            style="?attr/buttonBarButtonStyle"
+            android:text="@string/enter_app"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
